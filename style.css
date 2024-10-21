@@ -1,1 +1,39 @@
 @charset "UTF-8";
+
+/* Breakpoint */
+
+/* Smartphone Portrait */
+
+/* Smartphone Landscape */
+@media (min-width: 576px){
+    body {
+        background-color: #00ff00;
+    }
+}
+/* Tablet Portrait */
+@media (min-width: 768px){
+    body {
+        background-color: blueviolet;
+    }
+}
+/* Tablet Landscape */
+@media (min-width: 992px){
+    body {
+        background-color: blue;
+    }
+}
+
+/* PCs */
+@media (min-width: 1200px){
+    body {
+        background-color: red;
+        color: white;
+    }
+}
+/* Telas fullhd / 4K / SmartTV*/
+@media (min-width: 1400px){
+    body {
+        background-color: black;
+        color: white;
+    }
+}
