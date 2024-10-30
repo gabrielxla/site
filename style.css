@@ -1,39 +1,159 @@
 @charset "UTF-8";
 
-/* Breakpoint */
+/* Importação de font */ 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap');
+/*variáveis */
+:root {
+    --azul: #00acee;
+    --branco: #fff;
+}
+/* CSS Reset (Compatibilizar com todos navegadores)*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Layout */
+body {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1em; /* 1em = 100% */
+}
 
+.container {
+    margin: 0 auto; /* centraliza o bloco*/
+    
+
+    }
+/*h1 {
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}*/
 /* Smartphone Portrait */
 
+/* Cabeçalho */
+header {
+    height: 81px;
+    background-color: #00acee;
+
+}
+
+#logo img {
+    width: 85px;
+    height: 85px;
+    margin: 0px 0px 0px 2px;
+
+}
+#check {
+    display: none;
+    
+}
+/* efeito de minimizar o menu */
+/* se check estiver "ticado", criar um estilo para ul */
+#check:checked~UL {
+    right: 0%;
+}
+label {
+    font-size: 2em;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: rgba(0,0,0, 0.7); /* 0.5 = 50%*/
+
+    
+}
+nav ul{
+    height: 100vh; /* 100vh = 100% da altura da tela */
+    list-style: none; /* tira os marcadores da lista */
+    width: 65%;
+    position: fixed;
+    top: 81px;
+    right: -65%;
+    background-color: rgba(36,36,36, 1);
+    transition: all 0.25s;
+}
+nav ul li {
+    padding: 14px 19px 14px 20px;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #fff;
+    text-align: right;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* tira o sublinhado */
+}
 /* Smartphone Landscape */
 @media (min-width: 576px){
-    body {
-        background-color: #00ff00;
+   /* Cabeçalho*/
+   #logo img {
+    margin: 3px 0px 0px 0px;
+   }
+    .container {
+        max-width: 540px;
+        background-color: #00acee;
     }
 }
 /* Tablet Portrait */
 @media (min-width: 768px){
-    body {
-        background-color: blueviolet;
+    /* Cabeçalho */
+    .container{
+        max-width: 720px;
+        background-color: #00acee;
     }
+    header {
+        height: 106px;
+        
+    }
+    #logo img {
+        width: 110px;
+        height: 110px;
+        
+ }
 }
 /* Tablet Landscape */
 @media (min-width: 992px){
-    body {
-        background-color: blue;
+    /* Cabeçalho*/
+    .container {
+        max-width: 960px;
+        background-color: #00acee;
     }
+   
 }
 
 /* PCs */
 @media (min-width: 1200px){
-    body {
-        background-color: red;
-        color: white;
-    }
+ .container {
+    max-width: 1140px;
+    background-color: #00acee;
+
+ }
+ header {
+    height: 135px;
+ }
+ #logo img {
+    width: 130px;
+    height: 130px;
+    margin: 5px 0px 5px 0px;
 }
+ 
+}
+
 /* Telas fullhd / 4K / SmartTV*/
 @media (min-width: 1400px){
-    body {
-        background-color: black;
-        color: white;
+    .container {
+        max-width: 1360px;
+        background-color: var(--azul);
+
     }
+    header {
+        height: 140px;
+
+    }
+   #logo img {
+    width: 135px;
+    height: 135px;
+   }
 }
