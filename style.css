@@ -22,9 +22,23 @@ body {
 
 .container {
     margin: 0 auto; /* centraliza o bloco*/
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     }
+.botao {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #fff;
+    width: 200px;
+    padding: 5px -1px ;
+    align-self: center;
+    border-radius: 25px;
+    margin-top: 20px;
+}
 /*h1 {
     font-family: "Noto Sans KR", serif;
     font-optical-sizing: auto;
@@ -84,6 +98,31 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none; /* tira o sublinhado */
+
+}
+ /* Banner */
+ main {
+    height: 60vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    
+ }
+ main h1 {
+    font-size: 3em;
+ }
+ main h2 {
+    font-size: 1.1em;
+    margin-top: 4px
+ }
+ main h1, h2 {
+    color: #fff;
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 /* Smartphone Landscape */
 @media (min-width: 576px){
@@ -95,6 +134,7 @@ nav ul li a {
         max-width: 540px;
         background-color: #00acee;
     }
+
 }
 /* Tablet Portrait */
 @media (min-width: 768px){
@@ -111,6 +151,12 @@ nav ul li a {
         width: 110px;
         height: 110px;
         
+ }
+    nav ul {
+        top: 106px;
+        width: 45%;
+        right: -45%;
+
  }
 }
 /* Tablet Landscape */
@@ -132,15 +178,34 @@ nav ul li a {
  }
  header {
     height: 135px;
- }
+
+}
  #logo img {
     width: 130px;
     height: 130px;
     margin: 5px 0px 5px 0px;
 }
- 
+/* Configuração do Menu*/ 
+label {
+    display: none;
+ }
+ nav ul {
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: transparent;
 }
-
+nav ul li {
+    float: left;
+    border: 0;
+}
+nav ul li a {
+    color: #fff;
+}
+nav ul li a:hover {
+    color: black;
+}
+}
 /* Telas fullhd / 4K / SmartTV*/
 @media (min-width: 1400px){
     .container {
@@ -155,5 +220,8 @@ nav ul li a {
    #logo img {
     width: 135px;
     height: 135px;
+   }
+   nav ul {
+    top: 140px;
    }
 }
