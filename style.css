@@ -75,7 +75,7 @@ label {
     position: fixed;
     top: 15px;
     right: 15px;
-    color: rgba(0,0,0, 0.7); /* 0.5 = 50%*/
+    color: rgba(0,0,0, 0.9); /* 0.5 = 50%*/
 
     
 }
@@ -86,7 +86,7 @@ nav ul{
     position: fixed;
     top: 81px;
     right: -65%;
-    background-color: rgba(36,36,36, 1);
+    background-color: rgba(36,36,36, 0.8);
     transition: all 0.25s;
 }
 nav ul li {
@@ -131,7 +131,7 @@ nav ul li a {
     margin: 3px 0px 0px 0px;
    }
     .container {
-        max-width: 540px;
+        max-width: 700px;
         background-color: #00acee;
     }
 
@@ -140,7 +140,7 @@ nav ul li a {
 @media (min-width: 768px){
     /* Cabeçalho */
     .container{
-        max-width: 720px;
+        max-width: 770px;
         background-color: #00acee;
     }
     header {
@@ -158,12 +158,18 @@ nav ul li a {
         right: -45%;
 
  }
+ main h1 {
+    font-size: 5em;
+ }
+ main h2 {
+    font-size: 1.8em;
+ }
 }
 /* Tablet Landscape */
 @media (min-width: 992px){
     /* Cabeçalho*/
     .container {
-        max-width: 960px;
+        max-width: 1000px;
         background-color: #00acee;
     }
    
@@ -172,7 +178,7 @@ nav ul li a {
 /* PCs */
 @media (min-width: 1200px){
  .container {
-    max-width: 1140px;
+    max-width: 1350px;
     background-color: #00acee;
 
  }
@@ -209,7 +215,7 @@ nav ul li a:hover {
 /* Telas fullhd / 4K / SmartTV*/
 @media (min-width: 1400px){
     .container {
-        max-width: 1360px;
+        max-width: 1450px;
         background-color: var(--azul);
 
     }
