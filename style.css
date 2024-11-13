@@ -34,7 +34,7 @@ body {
     font-weight: 700;
     background-color: #fff;
     width: 200px;
-    padding: 5px -1px ;
+    padding: 5px 1px;
     align-self: center;
     border-radius: 25px;
     margin-top: 20px;
@@ -282,8 +282,8 @@ nav ul li a:hover {
    }
    
    #destaque {
-    flex-direction: fixed;
-    padding: 80px 250px;
+    background-attachment: fixed;
+    padding: 80px 250px; 
 }
 #imagemDestaque img {
     width: 300px;
