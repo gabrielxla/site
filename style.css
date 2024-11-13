@@ -124,6 +124,41 @@ nav ul li a {
     color: #fff;
     text-shadow: #000 0.05em 0.05em 0.05em;
 }
+#destaque {
+    background: url(img/background4.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    color: transparent;
+}
+#textoDestaque {
+    color: #fff;
+}
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+    border-radius: 90%;
+
+}
+#textoDestaque h2 {
+    margin-bottom: 20px;
+
+}
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.topicos img {
+    margin-right: 15px;
+}
+.topicos p {
+    font-weight: 600;
+}
 /* Smartphone Landscape */
 @media (min-width: 576px){
    /* Cabeçalho*/
@@ -132,7 +167,17 @@ nav ul li a {
    }
     .container {
         max-width: 700px;
-        background-color: #00acee;
+    }
+    #destaque .container {
+        flex-direction: row;
+
+    }
+    #imagemDestaque {
+        margin-right: 20px;
+    }
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
     }
 
 }
@@ -141,7 +186,6 @@ nav ul li a {
     /* Cabeçalho */
     .container{
         max-width: 770px;
-        background-color: #00acee;
     }
     header {
         height: 106px;
@@ -164,13 +208,20 @@ nav ul li a {
  main h2 {
     font-size: 1.8em;
  }
+ #imagemDestaque img{
+    width: 250px;
+    height: 250px;
+}
 }
 /* Tablet Landscape */
 @media (min-width: 992px){
     /* Cabeçalho*/
     .container {
         max-width: 1100px;
-        background-color: #00acee;
+     
+    }
+    #destaque {
+        padding: 60px 150px;
     }
    
 }
@@ -178,8 +229,7 @@ nav ul li a {
 /* PCs */
 @media (min-width: 1200px){
  .container {
-    max-width: 1350px;
-    background-color: #00acee;
+    max-width: 1380px;
 
  }
  header {
@@ -216,7 +266,7 @@ nav ul li a:hover {
 @media (min-width: 1400px){
     .container {
         max-width: 1450px;
-        background-color: var(--azul);
+      
 
     }
     header {
@@ -230,4 +280,13 @@ nav ul li a:hover {
    nav ul {
     top: 140px;
    }
+   
+   #destaque {
+    flex-direction: fixed;
+    padding: 80px 250px;
+}
+#imagemDestaque img {
+    width: 300px;
+    height: 300px;
+}
 }
