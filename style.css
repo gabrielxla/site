@@ -159,6 +159,27 @@ nav ul li a {
 .topicos p {
     font-weight: 600;
 }
+/* Sobre */
+#sobre {
+    background-color: #00acee;
+    padding: 50px 15px;
+}
+#sobre p , h3{
+    color: #fff;
+
+}
+#sobre h2 {
+    margin-bottom: 15px;
+    
+}
+#video iframe{
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+#sobre .container {
+    flex-direction: column;
+}
 /* Smartphone Landscape */
 @media (min-width: 576px){
    /* Cabeçalho*/
@@ -178,6 +199,10 @@ nav ul li a {
     #imagemDestaque img {
         width: 256px;
         height: 256px;
+    }
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 
 }
@@ -230,7 +255,9 @@ nav ul li a {
 @media (min-width: 1200px){
  .container {
     max-width: 1380px;
-
+ }
+ #sobre .container{
+    flex-direction: row;
  }
  header {
     height: 135px;
@@ -261,13 +288,22 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
+#videos iframe {
+    margin: 0;
+}
 }
 /* Telas fullhd / 4K / SmartTV*/
 @media (min-width: 1400px){
     .container {
         max-width: 1450px;
-      
 
+    }
+    #sobre .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    #video iframe {
+        margin: 0;
     }
     header {
         height: 140px;
