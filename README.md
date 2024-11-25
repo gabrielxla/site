@@ -5,3 +5,6 @@
 Estudo do HTML5 e CSS3
 ## Autor
 Gabriel Lima 
+
+## Site 
+![](img/qrcode.png)
