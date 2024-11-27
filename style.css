@@ -24,9 +24,12 @@ body {
 .container {
     margin: 0 auto; /* centraliza o bloco*/
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
 
+    }
+    p {
+        color: #fff;
     }
 .botao {
     text-decoration: none;
@@ -35,7 +38,7 @@ body {
     font-weight: 700;
     background-color: #fff;
     width: 200px;
-    padding: 5px 1px;
+    padding: 10px 20px;
     align-self: center;
     border-radius: 25px;
     margin-top: 20px;
@@ -181,6 +184,33 @@ nav ul li a {
 #sobre .container {
     flex-direction: column;
 }
+/* Faixa destaque*/
+#faixaDestaque {
+    background: url(img/destaque\ definitivo-photoaidcom-darken.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
+#faixaDestaque .container {
+    flex-direction: column;
+    align-items: baseline;
+}
+#textoFaixa h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#textoFaixa p {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#textoFaixa a {
+    margin-left: 10px;
+}
+#imagemFaixa img{
+    width: 256px;
+    height: 256px;
+    
+}
 /* Smartphone Landscape */
 @media (min-width: 576px){
    /* Cabeçalho*/
@@ -272,6 +302,10 @@ nav ul li a {
     height: 130px;
     margin: 5px 0px 5px 0px;
 }
+#faixaDestaque {
+    background-attachment: fixed;
+}
+
 /* Configuração do Menu*/ 
 label {
     display: none;
@@ -295,6 +329,26 @@ nav ul li a:hover {
 #videos iframe {
     margin: 0;
 }
+#faixaDestaque .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+#imagemFaixa img {
+    width: 380px;
+    height: 380px;
+    margin-right: 150px;
+}
+#textoFaixa{
+    margin-right: 100px;
+}
+#textoFaixa p {
+    padding: 0px ;
+    margin-bottom: 40px;
+}
+
+
+
 }
 /* Telas fullhd / 4K / SmartTV*/
 @media (min-width: 1400px){
