@@ -260,6 +260,9 @@ nav ul li a {
  #sobre .container{
     flex-direction: row;
  }
+ #sobre h2, h3, p {
+    padding: 0px 20px 0px 20px;
+}
  header {
     height: 135px;
 
@@ -329,5 +332,8 @@ nav ul li a:hover {
 #imagemDestaque img {
     width: 300px;
     height: 300px;
+}
+#sobre h2, h3, p {
+    padding: 0px 20px 0px 20px;
 }
 }
