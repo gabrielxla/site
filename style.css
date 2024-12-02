@@ -333,6 +333,10 @@ nav ul li a {
     #destaque {
         padding: 60px 150px;
     }
+    #faixaDestaque .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
    
 }
 
@@ -358,7 +362,9 @@ nav ul li a {
 }
 #faixaDestaque {
     background-attachment: fixed;
+    
 }
+
 
 /* Configuração do Menu*/ 
 label {
