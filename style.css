@@ -43,6 +43,8 @@ body {
     border-radius: 25px;
     margin-top: 20px;
 }
+
+
 /*h1 {
     font-family: "Noto Sans KR", serif;
     font-optical-sizing: auto;
@@ -150,6 +152,7 @@ nav ul li a {
 }
 #textoDestaque h2 {
     margin-bottom: 20px;
+    margin-top: 5px;
 
 }
 .topicos {
@@ -210,7 +213,54 @@ nav ul li a {
     width: 256px;
     height: 256px;
     
+    
 }
+/*Conteudo */
+.card {
+    width: 338px;
+    height: 520px;
+    background-color: #000;
+    border: 1px solid #fff;
+    margin-top: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+.card h3 {
+    margin-top: 15px;
+}
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+}
+.card a {
+    padding: 10px 100px;
+}
+#Conteudo {
+    padding: 50px 0px;
+}
+#Conteudo .container{
+    flex-direction: column;
+    align-items: center;
+}
+#Conteudo h2 {
+    margin-bottom: 25px;
+}
+#todos {
+    color: #fff;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Smartphone Landscape */
 @media (min-width: 576px){
    /* Cabeçalho*/
@@ -267,6 +317,10 @@ nav ul li a {
  #imagemDestaque img{
     width: 250px;
     height: 250px;
+}
+/*conteudo*/
+.card {
+    margin:5px 10px;
 }
 }
 /* Tablet Landscape */
@@ -346,7 +400,7 @@ nav ul li a:hover {
     padding: 0px ;
     margin-bottom: 40px;
 }
-
+/*Conteudo */
 
 
 }
