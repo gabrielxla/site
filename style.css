@@ -15,6 +15,9 @@
     border: 0;
 }
 /* Layout */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Libre Baskerville", serif;
     font-size: 1em; /* 1em = 100% */
