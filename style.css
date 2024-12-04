@@ -261,6 +261,24 @@ nav ul li a {
     justify-content: center;
 }
 
+/*rodape*/
+footer {
+    background-color: #19191a;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 0.87em;
+}
+#rodape .container{
+    flex-direction: column-reverse;
+}
+#social {
+    margin-bottom: 20px;
+}
+#rodape .container a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Smartphone Landscape */
 @media (min-width: 576px){
    /* Cabeçalho*/
@@ -285,7 +303,22 @@ nav ul li a {
         width: 560px;
         height: 315px;
     }
-
+    #rodape .container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #social {
+        margin-bottom: 0px;
+    }
+    #topo {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    #topo a {
+        transition: all 0.25s;
+    }
 }
 /* Tablet Portrait */
 @media (min-width: 768px){
