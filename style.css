@@ -282,7 +282,7 @@ footer {
     position: fixed;
     right: 10px;
     bottom: 10px;
-   
+}
 
 /* Smartphone Landscape */
 @media (min-width: 576px){
@@ -316,14 +316,8 @@ footer {
     #social {
         margin-bottom: 0px;
     }
-    #topo {
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-    }
-    #topo a {
-        transition: all 0.25s;
-    }
+   
+    
 }
 /* Tablet Portrait */
 @media (min-width: 768px){
