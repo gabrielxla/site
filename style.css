@@ -27,7 +27,7 @@ body {
 .container {
     margin: 0 auto; /* centraliza o bloco*/
     display: flex;
-    
+    transition: transform 0.5s ease-in-out;
     align-items: center;
 
     }
@@ -47,7 +47,10 @@ body {
     margin-top: 20px;
 }
 
-
+.carrossel {
+    width: 512px;
+    overflow: hidden;
+}
 /*h1 {
     font-family: "Noto Sans KR", serif;
     font-optical-sizing: auto;
@@ -119,9 +122,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
-    
- }
+}
  main h1 {
     font-size: 3em;
  }
